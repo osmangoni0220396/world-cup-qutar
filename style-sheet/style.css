@@ -1,0 +1,328 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+/*------------------------------ 
+    Common Style Or Utilities
+-------------------------------- */
+
+.container{
+    padding: 0 140px;
+}
+.btn{
+    text-decoration: none;
+    color: white;
+    background-color: red;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    padding: 8px 20px;
+}
+
+/*-------------------------------
+     Header Section Style Start  
+---------------------------------*/
+.header-area{
+    display: flex;
+    align-items: center;
+    padding: 30px 10px 20px 20px;
+    background-color: rgb(123, 25, 25);
+    border: 1px solid transparent;
+    border-radius: 20px;
+    margin: 30px 0;
+    color: white;
+}
+/* Header Tittle Section Start */
+
+.tittle-section .heading{
+    font-size: 35px;
+    line-height: 40px;
+}
+.tittle-section .heading-para{
+    margin-bottom: 35px;
+}
+.header-btn{
+    background-color: rgb(7, 17, 39);
+}
+.header-btn:hover{
+    background-color: rgb(75, 127, 241);
+    transition: background-color 5s ease;
+}
+
+.fa-arrow-right{
+    padding: 5px;
+}
+/* Header Tittle Section End */
+/* Header Image Section Start */
+
+.header-area .img-section{
+    margin: 0;
+}
+.header-area .img-section img{
+    width: 100%;
+    height: 450px;
+    margin: 0;
+    position: relative;
+    top: 26px;
+}
+/* Header Image Section End */
+/*-------------------------------
+     Main Section Style Start  
+---------------------------------*/
+.main-section{
+    margin: 60px 0;
+}
+.featured-area {
+    display: grid;
+    grid-template-columns: 145px auto;
+    column-gap: 20px; 
+}
+/* Featured Section Start */
+.featured-section{
+    background-color: rgb(123, 25, 25);
+    height: 230px;
+    border-radius: 10px;
+}
+.featured-section p{
+    padding: 0 10px;
+}
+button {
+    width: 125px;
+    padding: 10px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    color: white;
+    background-color: rgb(7, 17, 39);
+    padding: 20px;
+    cursor: pointer;
+
+}
+button:hover{
+    background-color: rgb(75, 127, 241);
+    transition: background-color 5s ease;
+}
+.active{
+    background-color: transparent;
+    border: 1px solid white;
+}
+/* Featured Section Start */
+/* Blog Section Start */
+.airticle{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.blogs{
+    border: 1px solid rgb(240, 237, 237);
+    border-radius: 10px;
+}
+.blogs-content{
+    padding: 5px 10px;
+}
+
+.blogs img{
+    width: 100%;
+}
+.airticle-btn{
+    background-color: rgb(94, 120, 94);
+    
+}
+.airticle-btn:hover{
+    background-color: rgb(111, 181, 111);
+    transition: background-color 5s ease;
+    
+}
+.airticle-para{
+    color: #161616;
+    font-size: 14px;
+
+}
+.time-comment {
+    font-size: 12px;
+    color: #b5b5b5;
+}
+
+.time{
+    padding: 0 15px 0 0;
+    
+}
+.tab-para{
+    text-align: center;
+    margin-top: 30px;
+    display: none;
+}
+/* Blog Section End */
+
+/*-------------------------------
+     Fotter Section Style Start  
+---------------------------------*/
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 80px 20px;
+    background-color: #161616;
+    margin-top: 30px;
+}
+.footer-heading{
+    color: white;
+    font-size: 20px;
+}
+
+.info, .social-link{
+    padding: 20px 0;
+}
+.info-item, .social-site{
+    text-decoration: none;
+    padding: 0 20px;
+    color: rgb(199, 192, 192);
+    
+}
+.info-item{
+    padding-bottom: 5px;
+    font-size: 12px;
+}
+.info-item:hover{
+    color: white;
+    border-bottom: 1px solid white;
+}
+.social-site:hover{
+    color: white;
+    
+}
+
+.social-site{
+    padding: 5px 10px;
+    font-size: 20px;
+    background-color: #555151;
+    border-radius: 50%;
+    margin: 0 10px;
+}
+
+/*-------------------------------
+              Mobile  
+---------------------------------*/
+@media only screen and (max-width: 480px) {
+    /* Utilities */
+    .container{
+        padding: 0 10px;
+    }
+    /* Header Area */
+    .header-area{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+
+    }
+    .tittle-section{
+        text-align: center;
+    }
+    /* Featured Section  */
+    .featured-area {
+        display: grid;
+        grid-template-columns: auto;
+        column-gap: 20px; 
+    }
+    button {
+        width: 100%;
+        
+    }
+    .active{
+        border: 1px solid #161616;
+        color: #161616;
+    }
+    .featured-section p{
+        padding: 0 5px;
+    }
+    .featured-section{
+        background-color: transparent;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .airticle{
+        display: grid;
+        grid-template-columns: auto;
+        gap: 20px;
+    }
+    .tab-para{
+        display: none;
+    }
+    /* Fotter Section */
+    
+    .info{
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+}
+
+
+/*-------------------------------
+              Tab 
+---------------------------------*/
+@media only screen and (min-width:481px) and (max-width:768px) {
+    /* Utilities */
+    .container{
+        padding: 0 30px;
+    }
+    /* Header Area */
+    .header-area{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+    .tittle-section{
+        text-align: center;
+    }
+    /* Featured Area */
+    .featured-area {
+        display: grid;
+        grid-template-columns: auto;
+        column-gap: 20px; 
+    }
+    .featured-section p{
+        padding: 0 5px;
+    }
+    .featured-section{
+        background-color: transparent;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    button {
+        width: 100%;
+        
+    }
+    /* Blog Section */
+    .active{
+        border: 1px solid #161616;
+        color: #161616;
+    }
+    
+    .airticle{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    
+    .tab-para{
+        display: block;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
